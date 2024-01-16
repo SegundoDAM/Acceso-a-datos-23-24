@@ -21,7 +21,6 @@ public class Pedido {
 
 	public Pedido() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Pedido(LocalDate localDate, double amount, Persona persona) {
