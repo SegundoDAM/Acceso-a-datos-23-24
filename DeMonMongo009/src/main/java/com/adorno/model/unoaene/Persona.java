@@ -13,9 +13,12 @@ import lombok.NoArgsConstructor;
 public class Persona {
 	@Id
 	private String id;
+	
 	@Indexed(unique = true)
 	private String nombre;
+	
 	private String email;
+	
 	public Persona(String nombre, String email) {
 		super();
 		this.nombre = nombre;

@@ -22,6 +22,14 @@ class unoaeneTest {
 	@Test
 	void test() {
 		mongoTemplate.getCollection("personas").drop();
+		Persona persona = new Persona("Anselmo", "algo@cosa.com");
+		personaRepository.save(new Persona("Anselmo", "algo@cosa.com"));
+		personaRepository.save(new Persona("Anselmo", "algo@cosa.com"));
+		System.out.println();
+	}
+//	@Test
+	void testTotal() {
+		mongoTemplate.getCollection("personas").drop();
 		mongoTemplate.getCollection("equipos").drop();
 		Persona persona = new Persona("Anselmo", "algo@cosa.com");
 		Persona save = personaRepository.save(persona);
